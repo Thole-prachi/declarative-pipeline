@@ -1,15 +1,14 @@
 pipeline
 {
 agent any
-stages{
-
-stage ('please verify the build')
+stages
 {
-step
+ stage ('please print hello')
 {
-git: github-url , branch: master
-}}
-
-{stage('please build the code')
+   step
+{
+     sh 'echo hello'
 }
-}}
+}
+}
+}
