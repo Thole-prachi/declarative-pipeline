@@ -1,0 +1,15 @@
+pipeline
+{
+agent any
+stages{
+
+stage ('please verify the build')
+{
+step
+{
+git: github-url , branch: master
+}}
+
+{stage('please build the code')
+}
+}}
