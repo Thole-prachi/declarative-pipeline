@@ -1,0 +1,10 @@
+--- 
+- 
+  hosts: all
+  tasks: 
+    - 
+      name: "please install apache"
+      yum: "name=httpd state=absent"
+    - 
+      name: "please start apache"
+      service: "name=httpd state=stopped"

@@ -1,0 +1,12 @@
+
+--- 
+- 
+  hosts: all
+  tasks: 
+    - 
+      name: "please install apache"
+      yum: "name=httpd state=latest"
+    - 
+      name: "please start apache"
+      service: "name=httpd state=started"
+
