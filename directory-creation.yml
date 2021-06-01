@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+    - name: 'create a new dir'
+      command: mkdir -p /root/prachi-dir
+    - name: 'change permission'
+      command: chmod 777 /root/prachi-dir
+
+
