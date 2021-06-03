@@ -9,4 +9,9 @@
     - 
       name: "please start apache"
       service: "name=httpd state=started"
-
+    -
+      name: "create kiran user"
+      tags: always
+      user:
+        name: kiran
+        groups: root
